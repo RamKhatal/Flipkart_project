@@ -14,14 +14,14 @@ public class BaseClass1  extends UtilClass{
 		if(browser.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
-//			System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\Browser\\chromedriver.exe");
+
 			driver = new ChromeDriver();
 			
 		}else if (browser.equals("firefox"))
 			
 		{
 			WebDriverManager.chromedriver().setup();
-//			System.setProperty("webdriver.gecko.driver", "C:\\Users\\Sagar Suepkar\\Driver\\chromedriver.exe");
+
 			driver = new FirefoxDriver();
 		}
 		driver.get("https://www.flipkart.com/");
